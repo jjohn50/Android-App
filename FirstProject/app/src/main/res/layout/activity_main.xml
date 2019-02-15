@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="inc.jjohn.firstproject.MainActivity">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/text_layout">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/butc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear" />
+
+    </LinearLayout>
+<LinearLayout
+android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:orientation="vertical"
+    android:layout_below="@+id/text_layout">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/but1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@android:color/darker_gray"
+        android:onClick="onClick"
+        android:text="1"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/but2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@android:color/darker_gray"
+        android:onClick="onClick"
+        android:text="2"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/but3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@android:color/darker_gray"
+        android:onClick="onClick"
+        android:text="3"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/butplus"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@android:color/darker_gray"
+        android:onClick="onClickSigns"
+        android:text="+"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="40sp" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/but4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@android:color/darker_gray"
+            android:onClick="onClick"
+            android:text="4"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/but5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@android:color/darker_gray"
+            android:onClick="onClick"
+            android:text="5"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/but6"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@android:color/darker_gray"
+            android:onClick="onClick"
+            android:text="6"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/butminus"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@android:color/darker_gray"
+            android:onClick="onClickSigns"
+            android:text="-"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="40sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/but7"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@android:color/darker_gray"
+            android:onClick="onClick"
+            android:text="7"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/but8"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@android:color/darker_gray"
+            android:onClick="onClick"
+            android:text="8"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/but9"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@android:color/darker_gray"
+            android:onClick="onClick"
+            android:text="9"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/butproduct"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@android:color/darker_gray"
+            android:onClick="onClickSigns"
+            android:text="*"
+            android:textAllCaps="false"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="40sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/butdot"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@android:color/darker_gray"
+            android:onClick="onClick"
+            android:text="."
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/but0"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@android:color/darker_gray"
+            android:onClick="onClick"
+            android:text="0"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/butequals"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@android:color/darker_gray"
+            android:onClick="Calculate"
+            android:text="="
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/butdivision"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@android:color/darker_gray"
+            android:onClick="onClickSigns"
+            android:text="/"
+            android:textAllCaps="false"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+</RelativeLayout>
